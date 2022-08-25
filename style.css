@@ -1,0 +1,106 @@
+/* primary - #293462 */
+/* secondary - #1CD6CE */
+/* third - #FEDB39 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #293462;
+}
+
+.board{
+    margin: auto;
+    width: 70%;
+}
+
+.board_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+}
+.x{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #1CD6CE;
+    padding: 0.4rem;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.o{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #FEDB39;
+    padding: 0.4rem;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.head_turn{
+    padding: 0.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 150px;
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#turn{
+    font-weight: bold;
+    font-family: 'Rubik Mono One', sans-serif;
+    margin-right: 0.51rem;
+    color: #1CD6CE;
+}
+
+.board_body{
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0.8rem;
+}
+
+.board_cell{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+    font-family: 'Rubik Mono One', sans-serif;
+    border-radius: 5px;
+    transition: transform 0.5s ease-in;
+    cursor: pointer;
+}
+
+.board_cell:active{
+    transform: scale(-1);
+}
+
+.head_restart{
+    outline: none;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 100px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #293462;
+    border-radius: 5px;
+    border: none;
+}
+
+@media screen and (max-width:768px) {
+    .board{
+        width: 100%;
+    }
+}

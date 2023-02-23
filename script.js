@@ -10,7 +10,7 @@ const turn_text = document.getElementById('turn');
 // this is a restart button
 const restart = document.querySelector('.head_restart');
 
-// This is a 2D array for checking the winning patter 
+// This is a 2D array for checking the winning pattern 
 // when a user click on the cell
 
 const pattern = [[0,1,2],[0,3,6],[0,4,8],[1,4,7],[2,5,8],[3,4,5],[2,4,6],[6,7,8]];
@@ -61,7 +61,7 @@ const removeEvent = () => {
 }
 
 
-// handelig the clicks
+// handeling the clicks
 const handleClick = (e) => {
     fillCell(e.target);
     if(checkDraw()){
